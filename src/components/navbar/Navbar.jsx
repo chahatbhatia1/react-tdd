@@ -4,7 +4,10 @@ class NavBar extends Component {
     state = {
         isOpen: false
       }
- 
+      
+    toggle = () => {
+        this.setState({ isOpen: !this.state.isOpen});
+    }  
     render() {
     return (
       <Navbar>
@@ -12,7 +15,7 @@ class NavBar extends Component {
           <img />
           On Time Food
         </NavbarBrand>
-        <NavbarToggler />
+        <NavbarToggler onClick={this.toggle}/>
         <Collapse isOpen={this.state.isOpen} />
       </Navbar>
     );

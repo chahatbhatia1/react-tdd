@@ -55,3 +55,11 @@ it("collapse menu with attribute isOpen = false ", ()=> {
 
     expect(wrapper.state().isOpen).toEqual(false);
 });
+
+it("toggle button should open dropdown onclick", () => {
+      const wrapper = shallow(<NavBar />);
+      const toggleBtn = wrapper.find("NavbarToggler");
+      toggleBtn.simulate("click");
+      expect(wrapper.state().isOpen).toEqual(true);
+    
+});
