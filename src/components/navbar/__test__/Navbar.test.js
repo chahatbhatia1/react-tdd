@@ -1,5 +1,6 @@
-import { shallow } from "enzyme";
+import { shallow, mount } from "enzyme";
 import React from 'react';
+
 import NavBar from "../NavBar";
 import { configure } from "enzyme";
 import Adapter from "enzyme-adapter-react-16";
@@ -19,4 +20,11 @@ it("should render a navbar brand", ()=> {
     const brand = wrapper.find('NavbarBrand');
 
     expect(brand).toHaveLength(1);
+});
+
+it("navbar brand should have a text 'On Time Food' ", ()=> {
+    const wrapper = mount(<NavBar />);
+    const brand = wrapper.find('NavbarBrand');
+
+    expect(brand.text()).toEqual('On Time Food');
 });

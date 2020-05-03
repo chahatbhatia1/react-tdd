@@ -5,7 +5,7 @@ class NavBar extends Component {
     render() { 
         return ( 
             <Navbar>
-                <NavbarBrand ></NavbarBrand>
+                <NavbarBrand data-testid="navbar-brand">On Time Food</NavbarBrand>
             </Navbar>
          );
     }
