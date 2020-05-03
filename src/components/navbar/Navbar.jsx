@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
-import { Navbar } from "reactstrap";
+import { Navbar, NavbarBrand } from "reactstrap";
 class NavBar extends Component {
     
     render() { 
         return ( 
-            <Navbar />
+            <Navbar>
+                <NavbarBrand ></NavbarBrand>
+            </Navbar>
          );
     }
 }
