@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Navbar, NavbarBrand, NavbarToggler } from "reactstrap";
+import { Navbar, NavbarBrand, NavbarToggler, Collapse } from "reactstrap";
 class NavBar extends Component {
   render() {
     return (
@@ -9,6 +9,7 @@ class NavBar extends Component {
           On Time Food
         </NavbarBrand>
         <NavbarToggler />
+        <Collapse />
       </Navbar>
     );
   }

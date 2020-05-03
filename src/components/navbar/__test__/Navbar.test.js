@@ -42,3 +42,10 @@ it("navbar should have a navbar toggler button ", ()=> {
 
     expect(btn).toHaveLength(1);
 });
+
+it("navbar should have a collapse menu ", ()=> {
+    const wrapper = mount(<NavBar />);
+    const menu = wrapper.find('Collapse');
+
+    expect(menu).toHaveLength(1);
+});
