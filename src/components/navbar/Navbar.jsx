@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Navbar, NavbarBrand, NavbarToggler, Collapse } from "reactstrap";
+import { Nav , Navbar, NavbarBrand, NavbarToggler, Collapse } from "reactstrap";
 class NavBar extends Component {
     state = {
         isOpen: false
@@ -16,7 +16,9 @@ class NavBar extends Component {
           On Time Food
         </NavbarBrand>
         <NavbarToggler onClick={this.toggle}/>
-        <Collapse isOpen={this.state.isOpen} />
+        <Collapse isOpen={this.state.isOpen} >
+            <Nav ></Nav>
+        </Collapse>
       </Navbar>
     );
   }

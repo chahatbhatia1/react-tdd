@@ -73,3 +73,10 @@ it("toggle button should close dropdown onclick", () => {
     expect(wrapper.state().isOpen).toEqual(false);
   
 });
+
+it("collpase should have a Nav tag ", ()=> {
+    const wrapper = mount(<NavBar />);
+    const nav = wrapper.find('Nav');
+
+    expect(nav).toHaveLength(1);
+});
