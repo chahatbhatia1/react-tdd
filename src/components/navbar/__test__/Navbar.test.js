@@ -28,3 +28,10 @@ it("navbar brand should have a text 'On Time Food' ", ()=> {
 
     expect(brand.text()).toEqual('On Time Food');
 });
+
+it("navbar brand should have image tag ", ()=> {
+    const wrapper = mount(<NavBar />);
+    const img = wrapper.find('img');
+
+    expect(img).toHaveLength(1);
+});
