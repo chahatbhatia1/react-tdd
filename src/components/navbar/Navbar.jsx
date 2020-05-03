@@ -1,7 +1,11 @@
 import React, { Component } from "react";
 import { Navbar, NavbarBrand, NavbarToggler, Collapse } from "reactstrap";
 class NavBar extends Component {
-  render() {
+    state = {
+        isOpen: false
+      }
+ 
+    render() {
     return (
       <Navbar>
         <NavbarBrand data-testid="navbar-brand">
@@ -9,7 +13,7 @@ class NavBar extends Component {
           On Time Food
         </NavbarBrand>
         <NavbarToggler />
-        <Collapse />
+        <Collapse isOpen={this.state.isOpen} />
       </Navbar>
     );
   }

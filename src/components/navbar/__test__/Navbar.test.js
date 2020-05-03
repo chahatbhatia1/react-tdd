@@ -49,3 +49,9 @@ it("navbar should have a collapse menu ", ()=> {
 
     expect(menu).toHaveLength(1);
 });
+
+it("collapse menu with attribute isOpen = false ", ()=> {
+    const wrapper = mount(<NavBar />);
+
+    expect(wrapper.state().isOpen).toEqual(false);
+});
