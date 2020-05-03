@@ -35,3 +35,10 @@ it("navbar brand should have image tag ", ()=> {
 
     expect(img).toHaveLength(1);
 });
+
+it("navbar should have a navbar toggler button ", ()=> {
+    const wrapper = mount(<NavBar />);
+    const btn = wrapper.find('NavbarToggler');
+
+    expect(btn).toHaveLength(1);
+});
