@@ -63,3 +63,13 @@ it("toggle button should open dropdown onclick", () => {
       expect(wrapper.state().isOpen).toEqual(true);
     
 });
+
+
+it("toggle button should close dropdown onclick", () => {
+    const wrapper = shallow(<NavBar />);
+    const toggleBtn = wrapper.find("NavbarToggler");
+    toggleBtn.simulate("click");
+    toggleBtn.simulate("click");
+    expect(wrapper.state().isOpen).toEqual(false);
+  
+});
