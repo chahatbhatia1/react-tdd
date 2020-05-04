@@ -80,3 +80,10 @@ it("collpase should have a Nav tag ", ()=> {
 
     expect(nav).toHaveLength(1);
 });
+
+it("should renders 3 nav links",() => {
+    const wrapper = mount(<NavBar />);
+    const navLinks = wrapper.find("NavLink");
+
+    expect(navLinks).toHaveLength(3);
+})
