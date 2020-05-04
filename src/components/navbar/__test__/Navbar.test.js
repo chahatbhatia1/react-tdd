@@ -94,3 +94,9 @@ it("should renders a shopping cart icon",() => {
 
     expect(cartIcon).toHaveLength(1);
 })
+
+it("should renders a show cart button",() => {
+    const wrapper = mount(<NavBar />);
+    const cartBtn = wrapper.find("Button");
+    expect(cartBtn).toHaveLength(1);
+})

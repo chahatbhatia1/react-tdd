@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Nav , Navbar, NavbarBrand, NavbarToggler, Collapse, NavItem, NavLink } from "reactstrap";
+
+import { Nav , Navbar, NavbarBrand, NavbarToggler, Collapse, NavItem, NavLink , Button} from "reactstrap";
 class NavBar extends Component {
     state = {
         isOpen: false
@@ -30,6 +31,11 @@ class NavBar extends Component {
                     <FontAwesomeIcon icon="shopping-cart" />
                   </NavLink>
               </NavItem>
+              <a >
+                <Button className="cart-btn">
+                  Show Cart
+                </Button>
+              </a>
             </Nav>
         </Collapse>
       </Navbar>
