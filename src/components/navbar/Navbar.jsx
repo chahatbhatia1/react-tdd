@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Nav , Navbar, NavbarBrand, NavbarToggler, Collapse, NavItem, NavLink } from "reactstrap";
 class NavBar extends Component {
     state = {
@@ -25,7 +26,9 @@ class NavBar extends Component {
                   <NavLink>About</NavLink>
               </NavItem>
               <NavItem>
-                  <NavLink>Our Team</NavLink>
+                  <NavLink>
+                    <FontAwesomeIcon icon="shopping-cart" />
+                  </NavLink>
               </NavItem>
             </Nav>
         </Collapse>

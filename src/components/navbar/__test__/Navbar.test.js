@@ -87,3 +87,10 @@ it("should renders 3 nav links",() => {
 
     expect(navLinks).toHaveLength(3);
 })
+
+it("should renders a shopping cart icon",() => {
+    const wrapper = mount(<NavBar />);
+    const cartIcon = wrapper.find({icon:"shopping-cart"});
+
+    expect(cartIcon).toHaveLength(1);
+})
