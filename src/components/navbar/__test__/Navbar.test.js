@@ -103,3 +103,10 @@ it("should renders a show cart button with text Show Cart", () => {
   expect(cartBtn.text()).toBe("Show Cart");
 });
 
+it("navbar should have props itemTotal with value zero", () => {
+    
+  const wrapper = mount(<NavBar itemTotal={0}/>);
+  expect(wrapper.props().itemTotal).toEqual(0);
+
+
+});
