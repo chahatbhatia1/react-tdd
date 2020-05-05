@@ -22,7 +22,7 @@ it("should render a navbar brand", () => {
 });
 
 it("navbar brand should have a text 'On Time Food' ", () => {
-  const wrapper = mount(<NavBar />);
+  const wrapper = mount(<NavBar itemTotal={0}/>);
   const brand = wrapper.find("NavbarBrand");
 
   expect(brand.text()).toEqual("On Time Food");
@@ -102,3 +102,4 @@ it("should renders a show cart button with text Show Cart", () => {
   const cartBtn = wrapper.find("Button");
   expect(cartBtn.text()).toBe("Show Cart");
 });
+
