@@ -5,7 +5,7 @@ class Header extends Component {
         return ( 
             <div className="header">
                 <div className="overlay">
-                    
+                <h1 className="quote"> Fresh . Fast . Tasty</h1>
                 </div>
                 </div>
          );

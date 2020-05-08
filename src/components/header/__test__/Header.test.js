@@ -17,3 +17,9 @@ it("should render a header component", () => {
   
     expect(overlay).toHaveLength(1);
   });
+  it("header should render a quote", () => {
+    const wrapper = shallow(<Header />);
+    const quote = wrapper.find(".quote");
+  
+    expect(quote).toHaveLength(1);
+  });
