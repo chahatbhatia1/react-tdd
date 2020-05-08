@@ -3,7 +3,11 @@ import React, { Component } from 'react';
 class Header extends Component {
     render() { 
         return ( 
-            <div className="header">Header</div>
+            <div className="header">
+                <div className="overlay">
+                    
+                </div>
+                </div>
          );
     }
 }
